@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Sri Lanka Packages</title>
+    <link rel="stylesheet" href="PACKAGES.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="PHOTO/download.png" alt="Travel Sri Lanka Logo">
+                </a>
+            </div>
+                <li><a href="TRAVELLANKA.html">Home</a></li>
+                <li><a href="VISITSRILANKAABOUT.html">SriLanka</a></li>
+                <li><a href="PACKAGES.html"class="active">Packages</a></li>
+                <li><a href="BOOKED.html">Booked</a></li>
+                <li><a href="TRAVELLANKA.html">Our Services</a></li>
+        </nav>
+    </header>
+   
+    <section class="packages">
+        <!-- Destination Cards -->
+        <div class="package-card">
+            <img src="PACKAGESPHOTO/1.1.jpg" alt="Kandy">
+            <div class="package-details">
+                <h3>Kandy</h3>
+                <p>Discover the cultural heart of Sri Lanka.</p>
+                <p><strong>Price: $60</strong></p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="book-now" onclick="bookPackage('Kandy')">Book Now</button>
+            </div>
+        </div>
+        <div class="package-card">
+            <img src="PACKAGESPHOTO/3.jpg" alt="Galle">
+            <div class="package-details">
+                <h3>Galle</h3>
+                <p>Explore the historic Galle Fort.</p>
+                <p><strong>Price: $70</strong></p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="book-now" onclick="bookPackage('Galle')">Book Now</button>
+            </div>
+        </div>
+        <div class="package-card">
+            <img src="PACKAGESPHOTO/4.jpg" alt="Nuwara Eliya">
+            <div class="package-details">
+                <h3>Nuwara Eliya</h3>
+                <p>Experience the cool climate of Little England.</p>
+                <p><strong>Price: $50</strong></p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="book-now" onclick="bookPackage('Nuwara Eliya')">Book Now</button>
+            </div>
+        </div>
+        <div class="package-card">
+            <img src="PACKAGESPHOTO/5.jpg" alt="Trincomalee">
+            <div class="package-details">
+                <h3>Trincomalee</h3>
+                <p>Beautiful beaches and cultural landmarks.</p>
+                <p><strong>Price: $65</strong></p>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <button class="book-now" onclick="bookPackage('Trincomalee')">Book Now</button>
+            </div>
+        </div>
+        <div class="package-card">
+            <img src="PACKAGESPHOTO/6.jpg" alt="Badulla">
+            <div class="package-details">
+                <h3>Badulla</h3>
+                <p>Rich heritage with amazing waterfalls.</p>
+                <p><strong>Price: $50</strong></p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="book-now" onclick="bookPackage('Badulla')">Book Now</button>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <img src="PACKAGESPHOTO/7.jpg" alt="Horton Plains">
+            <div class="package-details">
+                <h3>Horton Plains</h3>
+                <p>Breathtaking hikes and World's End views.</p>
+                <p><strong>Price: $80</strong></p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="book-now" onclick="bookPackage('Horton Plains')">Book Now</button>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <img src="PACKAGESPHOTO/8.jpg" alt="Sri Pada">
+            <div class="package-details">
+                <h3>Sri Pada</h3>
+                <p>Sacred pilgrimage site with sunrise views.</p>
+                <p><strong>Price: $65</strong></p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="book-now" onclick="bookPackage('Sri Pada')">Book Now</button>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <img src="PACKAGESPHOTO/9.jpg" alt="Jaffna">
+            <div class="package-details">
+                <h3>Jaffna</h3>
+                <p>"Northern culture and historical sites.</p>
+                <p><strong>Price: $85</strong></p>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <button class="book-now" onclick="bookPackage('Jaffna')">Book Now</button>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <img src="PACKAGESPHOTO/10.jpg" alt="Anuradhapura">
+            <div class="package-details">
+                <h3>Anuradhapura</h3>
+                <p>Ancient city with sacred relics.</p>
+                <p><strong>Price: $55</strong></p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="book-now" onclick="bookPackage('Anuradhapura')">Book Now</button>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <img src="PACKAGESPHOTO/11.jpg" alt="Polonnaruwa">
+            <div class="package-details">
+                <h3>Polonnaruwa</h3>
+                <p>Explore ancient ruins of a great kingdom.</p>
+                <p><strong>Price: $50</strong></p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="book-now" onclick="bookPackage('Polonnaruwa')">Book Now</button>
+            </div>
+        </div>
+    
+        <div class="package-card">
+            <img src="PACKAGESPHOTO/12.jpg" alt="Ella">
+            <div class="package-details">
+                <h3>Ella</h3>
+                <p>Scenic hills and famous Nine Arch Bridge.</p>
+                <p><strong>Price: $75</strong></p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="book-now" onclick="bookPackage('Ella')">Book Now</button>
+            </div>
+        </div>
+        <div class="package-card">
+            <img src="PACKAGESPHOTO/13.jpg" alt="Sigiriya">
+            <div class="package-details">
+                <h3>Sigiriya</h3>
+                <p>Majestic Lion Rock fortress.</p>
+                <p><strong>Price: $70</strong></p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="book-now" onclick="bookPackage('Sigiriya')">Book Now</button>
+            </div>
+        </div>
+        <div class="package-card">
+            <img src="PACKAGESPHOTO/14.jpg" alt="Bentota">
+            <div class="package-details">
+                <h3>Bentota</h3>
+                <p>Pristine beaches and water sports.</p>
+                <p><strong>Price: $90</strong></p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="book-now" onclick="bookPackage('Bentota')">Book Now</button>
+            </div>
+        </div>
+        <div class="package-card">
+            <img src="PACKAGESPHOTO/15.jpg" alt="Colombo">
+            <div class="package-details">
+                <h3>Colombo</h3>
+                <p>Sri Lanka's vibrant commercial capital.</p>
+                <p><strong>Price: $80</strong></p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="book-now" onclick="bookPackage('Colombo')">Book Now</button>
+            </div>
+        </div>
+        <div class="package-card">
+            <img src="PACKAGESPHOTO/16.jpg" alt="Yala">
+            <div class="package-details">
+                <h3>Yala</h3>
+                <p>Famous wildlife safari and leopards</p>
+                <p><strong>Price: $70</strong></p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="book-now" onclick="bookPackage('Yala')">Book Now</button>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <!-- About Section -->
+                <div class="footer-about">
+                    <h4>About Visit Sri Lanka</h4>
+                    <p>Explore the beauty of Sri Lanka with our specially curated packages. Experience breathtaking landscapes, rich cultural heritage, and warm hospitality.</p>
+                </div>
+        
+                <!-- Contact Section -->
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><strong>Email:</strong> info@visitsrilanka.com</p>
+                    <p><strong>Phone:</strong> +94 123 456 789</p>
+                    <p><strong>Address:</strong> 123, Paradise Road, Colombo, Sri Lanka</p>
+                </div>
+        
+                <!-- Social Media Section -->
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <a href="#"><img src="PHOTO/1 (1).png" alt="Facebook"></a>
+                    <a href="#"><img src="PHOTO/2.png" alt="Twitter"></a>
+                    <a href="#"><img src="PHOTO/3.png" alt="Instagram"></a>
+                    <a href="#"><img src="PHOTO/4.png" alt="YouTube"></a>
+                </div>
+        
+                <!-- Map Section -->
+                <div class="footer-map">
+                    <h4>Our Location</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.760644903367!2d79.85445691472218!3d6.927078295370257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2591f79e80eeb%3A0x7754e23e41c2d12a!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2s!4v1614765654698!5m2!1sen!2s" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+                <p>&copy; 2024 Visit Sri Lanka. All Rights Reserved.</p>
+            </div>
+        </footer>
+    
+        
+        <!-- Add more destinations here -->
+    </section>
+    <script src="PACKAGES.js "></script>
+</body>
+</html>

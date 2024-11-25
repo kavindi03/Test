@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('PHOTOABOUT/15.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    background-color: #ff9800;
+    border-radius: 5px;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+/* Main Section */
+main {
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 100px;
+    background: rgba(255, 255, 255, 0.7); /* Slight transparency for the content */
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+    position: relative;
+    margin-top: 50vh; /* Ensure it doesn't overlap header */
+}
+
+/* Hero Section */
+header.hero {
+    text-align: center;
+    color: #fff;
+    padding: 30px 20px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+header.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header.hero p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Booking Form */
+.booking-form h2 {
+    text-align: center;
+    color: #f57c00;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #f57c00;
+    box-shadow: 0 0 8px rgba(245, 124, 0, 0.2);
+}
+
+textarea {
+    resize: none;
+}
+
+button.cta-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #f57c00, #e65100);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+button.cta-button:hover {
+    background: linear-gradient(90deg, #e65100, #f57c00);
+    transform: scale(1.03);
+}
+
+/* Other Place Field */
+#otherPlaceGroup {
+    display: none;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-about, .footer-contact, .footer-social, .footer-map {
+    text-align: left;
+}
+
+.footer-about p, .footer-contact p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-social a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.footer-social a img:hover {
+    transform: scale(1.1);
+}
+
+.footer-map iframe {
+    border-radius: 5px;
+    border: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #aaa;
+    padding-top: 10px;
+}
+
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    header.hero h1 {
+        font-size: 2.2rem;
+    }
+
+    header.hero p {
+        font-size: 1rem;
+    }
+
+    main {
+        margin-top: 8vh;
+        padding: 20px;
+    }
+
+    button.cta-button {
+        font-size: 16px;
+    }
+}

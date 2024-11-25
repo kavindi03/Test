@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Lanka Tourism Booking</title>
+    <link rel="stylesheet" href="BOOKED.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="PHOTO/download.png" alt="Travel Sri Lanka Logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="TRAVELLANKA.html">Home</a></li>
+                <li><a href="VISITSRILANKAABOUT.html">SriLanka</a></li>
+                <li><a href="PACKAGES.html">Packages</a></li>
+                <li><a href="BOOKED.html" class="active">Booked</a></li>
+                <li><a href="TRAVELLANKA.html">Our Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Booking Form Section -->
+    <main id="booking">
+        <section class="booking-form">
+            <h2>Create Your Personalized Journey</h2>
+            <form id="tourBookingForm">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="places">Select Destinations:</label>
+                    <select id="places" name="places[]" multiple onchange="handleOtherPlaceOption()">
+                        <option value="Sigiriya">Sigiriya Rock Fortress</option>
+                        <option value="Ella">Ella - Nine Arches Bridge</option>
+                        <option value="Galle">Galle Fort</option>
+                        <option value="other">Other (Please Specify Below)</option>
+                    </select>
+                </div>
+                <div class="form-group" id="otherPlaceGroup" style="display: none;">
+                    <label for="otherPlace">Your Preferred Destination:</label>
+                    <input type="text" id="otherPlace" name="otherPlace" placeholder="Type your desired destination">
+                </div>
+                <div class="form-group">
+                    <label for="people">Number of Travelers:</label>
+                    <input type="number" id="people" name="people" min="1" placeholder="How many are traveling?" required>
+                </div>
+                <div class="form-group">
+                    <label>Travel Dates:</label>
+                    <div class="date-group">
+                        <input type="date" id="startDate" name="startDate" required>
+                        <span>to</span>
+                        <input type="date" id="endDate" name="endDate" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Additional Notes:</label>
+                    <textarea id="comments" name="comments" placeholder="Share your preferences or special requests"></textarea>
+                </div>
+                <button type="submit" id="bookNowBtn" class="cta-button">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <!-- About Section -->
+            <div class="footer-about">
+                <h4>About Visit Sri Lanka</h4>
+                <p>Explore the beauty of Sri Lanka with our specially curated packages. Experience breathtaking landscapes, rich cultural heritage, and warm hospitality.</p>
+            </div>
+    
+            <!-- Contact Section -->
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><strong>Email:</strong> info@visitsrilanka.com</p>
+                <p><strong>Phone:</strong> +94 123 456 789</p>
+                <p><strong>Address:</strong> 123, Paradise Road, Colombo, Sri Lanka</p>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#"><img src="PHOTO/1 (1).png" alt="Facebook"></a>
+                <a href="#"><img src="PHOTO/2.png" alt="Twitter"></a>
+                <a href="#"><img src="PHOTO/3.png" alt="Instagram"></a>
+                <a href="#"><img src="PHOTO/4.png" alt="YouTube"></a>
+            </div>
+    
+            <!-- Map Section -->
+            <div class="footer-map">
+                <h4>Our Location</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.760644903367!2d79.85445691472218!3d6.927078295370257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2591f79e80eeb%3A0x7754e23e41c2d12a!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2s!4v1614765654698!5m2!1sen!2s" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Visit Sri Lanka. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script src="BOOKED.js"></script>
+</body>
+</html>

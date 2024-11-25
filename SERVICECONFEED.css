@@ -1,0 +1,260 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: url('SERVICEPHOTO/HOT.jpg') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    background-color: #ff9800;
+    border-radius: 5px;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+/* Section Styling */
+section {
+    padding: 200px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Services Section */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.service {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.service img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ccc;
+}
+
+.service h3 {
+    margin: 15px 0 10px;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #333;
+    padding: 0 10px 15px;
+}
+
+
+
+/* Form Styling */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: none;
+}
+
+form button {
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-about, .footer-contact, .footer-social, .footer-map {
+    text-align: left;
+}
+
+.footer-about p, .footer-contact p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-social a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.footer-social a img:hover {
+    transform: scale(1.1);
+}
+
+.footer-map iframe {
+    border-radius: 5px;
+    border: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #aaa;
+    padding-top: 10px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .nav-buttons button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    .service h3 {
+        font-size: 1.2rem;
+    }
+
+   
+}

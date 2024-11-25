@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('PHOTOABOUT/pexels-ollivves-1078983.jpg') no-repeat center center/cover;
+    background-size: cover;
+    color: #fff;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    z-index: 1000;
+}
+header img {
+    height: 80px;
+}
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    background-color: #ff9800;
+    border-radius: 5px;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+
+/* Main Section Styling */
+main {
+    padding-top: 250px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About Section - Beautiful Blurred Background */
+.about-section {
+    background: rgba(255, 255, 255, 0.3);  /* Semi-transparent white overlay */
+    backdrop-filter: blur(10px);  /* Apply the blur effect */
+    color: #fff;
+    padding: 50px;
+    margin: 30px 0;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-section h1 {
+    font-size: 3rem;
+    color: #ff9800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.about-section .welcome-text {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #ddd;
+    font-style: italic;
+}
+
+/* Other Section Styling */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #ff9800;
+    text-transform: capitalize;
+}
+
+/* Media Container */
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.media-container img {
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.media-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.2);
+}
+.media-container video {
+    max-width: 60%;
+    border: 5px solid #ff9800;
+    border-radius: 8px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-about, .footer-contact, .footer-social, .footer-map {
+    text-align: left;
+}
+
+.footer-about p, .footer-contact p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-social a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.footer-social a img:hover {
+    transform: scale(1.1);
+}
+
+.footer-map iframe {
+    border-radius: 5px;
+    border: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #aaa;
+    padding-top: 10px;
+}
+
